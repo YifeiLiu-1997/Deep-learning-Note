@@ -29,6 +29,7 @@
 - B. False
 
 *Ans: A*
+
 *True Ans: B **Maybe some experience may help, but nobody can always find the best model or hyperparameters without iterations.***
 
 # 5. Which one of these plots represents a ReLU activation function?
@@ -71,6 +72,7 @@
 - D. Decreasing the training set size generally does not hurt an algorithm’s performance, and it may help significantly.
 
 *Ans: A*
+
 *True Ans: A, B*
 
 
