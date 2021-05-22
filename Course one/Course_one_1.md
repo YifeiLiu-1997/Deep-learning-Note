@@ -26,6 +26,6 @@
 ### Time line
 1. Week 1: Introduciton
 2. Week 2: Basics of Neural Network programming
-3. Week 3: One hidden layer Neural Network
-4. Week 4: 
+3. Week 3: One hidden layer Neural Networks
+4. Week 4: Deep Neural Networks
 
