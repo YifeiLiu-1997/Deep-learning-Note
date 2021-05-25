@@ -8,7 +8,7 @@
 3. nx = 12288
 4. x --> y
 ### notation
-![](images/2.1 notation.png)
+![](images/notation.png)
 - (x, y), x∈Rnx, y∈{0, 1}
 - m, traning example: {(x1, y1), (x2, y2),...,(xm, ym)}
 - X = [x1, x2,..., xm], (12288 x m matrix)
@@ -21,11 +21,74 @@
 - Output: y_predict = sigmod(W_T**x**+b)
 
 # 2.3 cost funtion in logistic regression
+![](images/cost.png)
 - Loss (error) function: L(y_pred, y) = -(ylogy_pred + (1-y)log(1-y_pred)), prove: if you let y = 1, that means you want y_pred as big as possible but no bigger than 1, because sigmod function
 - Cost function: J(w, b) = 1/m x sum(L(y_pred, y))
 - Loss function is represent one single training sample, Cost function in represent all training good or not. 
 
 # 2.4 how to use gradient desent to train w and b
 ### example
+![](images/gd.png)
 - let's do a J(w) (simple function like y = x^2)'s gradient desent.
-- repeat { w:= w - α(dJ(w)/dw)}, α: learning rate
+- repeat { w:= w - α(dJ(w)/dw) as dw in code; b:= b - α(dJ(w)/dw as db in code}, α: learning rate
+
+# 2.5, 2.6 calculus and derivatives
+- that part is quite easy, but i still not skip it.
+- treat derivatives as slope
+
+# 2.7, 2.8 computation graph
+### example
+J(a, b, c) = 3(a + bc)
+- u = bc, v = a + u, J = 3v
+- forward propagation, just compute it.
+- back propagation means chain rule, how a changes infect J, it called dvar in code.
+
+# 2.9 implement gradient desent for one sample logistic regression
+### example
+- z = w_T + b
+- y_pred = a = sigmod(z)
+- Loss(a, y) = -(yloga + (1-y)loga)
+- if we have x1, x2 vector
+- write on a papper
+![my hand writing gradient desent](images/mygd.jpg)
+
+# 2.10 implement gradient desent for m training sample logistic regression
+### example
+- just write on a paper
+![my hand writing gradient desent](images/mygd_m.jpg)
+
+# 2.11 vectorized
+- vectorized:
+```python
+import numpy as np
+
+a = np.random.rand(1000000)
+b = np.random.rand(1000000)
+
+c = np.dot(a, b)
+```
+- non-vectorized:
+```python
+import numpy as np
+
+a = np.random.rand(1000000)
+b = np.random.rand(1000000)
+c = 0
+
+for i in range(1000000):
+  c += a[i] * b[i]
+```
+### *the result shows that vectorized code is faster than non-vectorized code*
+
+
+
+
+
+
+
+
+
+
+
+
+
