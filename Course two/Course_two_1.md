@@ -80,11 +80,35 @@ for i in range(1000000):
 ```
 ### *the result shows that vectorized code is faster than non-vectorized code*
 
+# 2.12 Neural network programming guideline
+- whenever possible, avoid exlicit for-loops.
 
+# 2.13, 2.14 vectorizing logistic regression (important)
+- X = [x1, x2,..., xm], w_T = [w1, w2,..., wm], x1 = [12288 col vector]
+- Z = np.dot(w.T, X) + b = [w_Tx1+b, w_Tx2+b,..., w_txm+b]
+- A = [a1, a2,..., am]
+### backward propagation
+- dZ = [dz1, dz2,..., dzm]
+- Y = [y1, y2,..., ym]
+- dZ = A - Y
+- write on a paper
+![important](images/important.jpg)
 
+# 2.15 brocasting
+### example
+- (3, 4) matrix can devide by (1, 4) matrix
+- python will copy (1, 4) matrix 3 times and expand to (3, 4) matrix
 
+# 2.16 tips and tricks to bug-free python
+```python
+import numpy as np
 
+a = np.random.rand(5)  # shape(5, ), do not use it
+# recommand
+a = np.random.rand(5, 1)  # shape(5, 1)
+```
 
+# 2.17 ipython, jupyter
 
 
 
