@@ -1,4 +1,4 @@
-# 2.1 
+# 2.1 binary classification
 ### some tips
 1. if had m training set, it usually don't use for loop.
 2. it have forward propagation step and backward propagation step.
@@ -8,6 +8,7 @@
 3. nx = 12288
 4. x --> y
 ### notation
+!['2.1 img'](images\2.1 notation.png)
 - (x, y), x∈Rnx, y∈{0, 1}
 - m, traning example: {(x1, y1), (x2, y2),...,(xm, ym)}
 - X = [x1, x2,..., xm], (12288 x m matrix)
