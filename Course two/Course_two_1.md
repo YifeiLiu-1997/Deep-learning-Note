@@ -92,7 +92,7 @@ for i in range(1000000):
 - Y = [y1, y2,..., ym]
 - dZ = A - Y
 - write on a paper
-![important](images/important.jpg)
+![image](https://user-images.githubusercontent.com/71109255/120877105-4030f680-c5e7-11eb-8d48-44d81b2359a3.png)
 
 # 2.15 brocasting
 ### example
