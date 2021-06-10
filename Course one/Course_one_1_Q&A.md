@@ -73,7 +73,7 @@
 
 *Ans: A*
 
-*True Ans: A, B*
+*True Ans: A, C*
 
 
 
