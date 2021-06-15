@@ -33,6 +33,9 @@ db[l].shape = b[l].shape
 # 4.4 why deep neurual network work
 for example, when you do a face recognize, 3-hidden layer represent edge, nose, face(just example)
 
+
 # parameters, hyper parameters
 parameters: W, b
 Hyperparameters: learning rate alpha, iterations, hidden layers l, hidden units n[1], n[2], activation function
+
+other: momentum, mini-batch size, regularizations
