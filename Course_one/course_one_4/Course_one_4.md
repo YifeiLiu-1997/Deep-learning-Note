@@ -21,4 +21,5 @@ a[l] = g[l]\(z[l])
 
 w[l] weight in layer l
 
-#
+# 4.2 forward prop and backward prop
+![image](https://user-images.githubusercontent.com/71109255/121987408-fe643500-cdca-11eb-99b6-887a15c743ce.png)
