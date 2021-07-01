@@ -8,4 +8,19 @@
 - max pooling means
 
 # some notation (l layer)
-- input nh[0] × nw[0]× nc[0] 
+- filter size = f[l]
+- padding: p[l]
+- stride: s[l]
+- input shape: nh[0] × nw[0]× nc[0]
+- activations: a[l], shape: output shape
+- each filter shape: f[l] × f[l] × nc[l-1]
+- weights: each filter shape × nc[l]
+- bias: nc[l] - (1, 1, 1, nc[l])
+- output shape: nh[l] × nw[l] × nc[l]
+- iter: nh[l] = floor(nh[l-1]+2×p[l]-f[l]/s[l] + 1)
+- iter: nw[l] = floor(nw[l-1]+2×p[l]-f[l]/s[l] + 1)
+
+# AlexNet, LeNet - 5, VGG - 16
+- LeNet-5: 1998
+- AlexNet: 
+- VGG-16: 
