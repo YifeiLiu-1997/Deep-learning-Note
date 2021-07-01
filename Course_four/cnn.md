@@ -3,9 +3,9 @@
 - to build a filter 3×3×1 and do a convolution operation
 
 # convolution operation
-- [image here]
+![image](https://user-images.githubusercontent.com/71109255/124054912-872ed200-da55-11eb-8f28-228f458e6db6.png)
 # pooling
-- max pooling means
+![image](https://user-images.githubusercontent.com/71109255/124056752-e3472580-da58-11eb-9a4c-047f26479282.png)
 
 # some notation (l layer)
 - filter size = f[l]
@@ -22,5 +22,9 @@
 
 # AlexNet, LeNet - 5, VGG - 16
 - LeNet-5: 1998
-- AlexNet: 
-- VGG-16: 
+![image](https://user-images.githubusercontent.com/71109255/124053713-4e8df900-da53-11eb-856c-7cddb507eaa9.png)
+- AlexNet: 2012
+![image](https://user-images.githubusercontent.com/71109255/124054445-98c3aa00-da54-11eb-8bfa-640051719b8f.png)
+- VGG-16: 2015
+![image](https://user-images.githubusercontent.com/71109255/124054852-6cf4f400-da55-11eb-9460-05b577f06ce1.png)
+
