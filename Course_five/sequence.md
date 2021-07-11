@@ -12,3 +12,11 @@
 ## forward propagation
 ![image](https://user-images.githubusercontent.com/71109255/125180118-ca90f980-e228-11eb-9f74-3cf0f381b603.png)
 
+## different structure of RNN
+![image](https://user-images.githubusercontent.com/71109255/125184569-6a627d80-e251-11eb-96d6-d3989930718a.png)
+
+## GRU
+
+## LSTM
+
+## BRNN
